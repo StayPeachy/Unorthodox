@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    outline: none;
+    border: none;
+}
+input{
+    outline: none;
+    border: none;
+}
+
+.header-btn:hover{
+    background-color: #fff;
+    color: #8B0000;
+    transition: all ease 0.6s;
+}
+h2{
+    font-family: 'Poppins', sans-serif;;
+}
+
+nav ul{
+	display: flex;
+}
+.active{
+    background-color: #D2B48C;
+    color:#ffffff;
+	box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
+	transition: all ease 0.2s;
+}
+nav ul li a{
+    font-family: 'Poppins', sans-serif;
+	height:40px;
+	line-height: 43px;
+	margin: 3px;
+	padding: 0px 22px;
+	display: flex;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color:#ffffff;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
+}
+nav ul li a:hover{
+	background-color: #dd003f;
+    color:#ffffff;
+	box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
+	transition: all ease 0.2s;
+}
+nav .menu-btn,
+.menu-icon{
+		display:none;
+	}
+
+
+
+#about{
+    width: 100%;
+    height: 120vh;
+    background-color: black;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+    position: relative;
+}
+.about-text{
+    width: 45%;
+    color: #fff;
+}
+.about-text h2{
+    font-size: 2.3rem;
+    color: #D2B48C;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+.about-text p{
+    font: 1.2rem;
+    color: #e2e2e2;
+}
+.about-text button{
+    width: 140px;
+    height: 40px;
+    border-radius: 18px;
+    color: #000;
+    background: #fff;
+}
+.about-text button:hover{
+    background: #D2B48C;
+    transition: all ease 0.6s;
+    color: #fff;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.603);
+}
+.about-image img:hover{
+    background: #000;
+    transition: all ease 0.6s;
+    color: #fff;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.603);
+}
+.about-image{
+    width: 50%;
+}
+.about-image img{
+    width: 500px;
+}
+.container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+.container .card .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.container .card:hover .content{
+    opacity: 1;
+}
+.container .card .content .imgBx{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+}
+.container .card .content .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .card .content .contentBx h3{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+.container .card .content .contentBx h3 span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+.container .card .sci li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+}
+.container .card .sci li a{
+    color: #fff;
+    font-size: 24px;
+}
+.container .card:hover .sci li{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.player{
+    position: absolute;
+    width: 350px;
+    background: #f1f3f4;
+    border-radius: 20px;
+    box-shadow: 0 50px 80px rgb(0, 0, 0, 0.5);
+} 
+.player .imgbox{
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+.player .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.player audio{
+    width: 100%;
+    outline: none;
+}
+h2{
+    color: #D2B48C;
+}
+
